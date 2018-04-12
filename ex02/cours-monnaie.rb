@@ -8,8 +8,8 @@ def trader_du_futur
     doc = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))  #je met cette ligne dans la boucle pour que la page 
     doc.css('a.currency-name-container').each_with_index do | monnaie, nb |                               #s'actualise
       tab[nb] = Hash.new(0)                                                 #je range un nvx hash dans chaque case de mon tableau
-      tab[nb][monnaie.text] = doc.css('a.price')[nb].text
-       sleep 1          
+      tab[nb][:"#{monnaie.text}"] = doc.css('a.price')[nb].text
+       #sleep 1          
       puts tab[nb]
     end
     p tab  #affichage du tableau entier 
