@@ -11,3 +11,6 @@ le bonus marche.
 enleve le 'sleep 1' et reduit la valeur du sleep pour que tu puisses t'en rendre compte sans attendre 1 h'
 J'ai aussi rajouté un bonus pour les correcteurs, il y a deux version de l'exo
 
+ex03 
+à toi de juger, il m'en a fait bien baver celui ci
+
